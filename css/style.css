@@ -10,6 +10,8 @@
   /* width: 50rem;
   height: 50rem; */
   /* display: flex; */
+  /* background-color: blue; */
+  /* margin-top: 10px; */
 }
 
 .checkout__container__inner {
@@ -19,7 +21,7 @@
   background-color: rgb(77, 24, 24);
   display: flexbox;
   width: 50rem;
-  height: 50rem;
+  height: 60rem;
   padding: 2rem;
   margin-top: 2rem;
 }
@@ -32,6 +34,13 @@
   border-bottom: 1px solid #aaa;
 }
 
+h2{
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
 .header__lower {
   margin: 2rem 0;
 }
@@ -54,8 +63,61 @@
   padding: 1.5rem;
 }
 
+
+
+input {
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.row-1 {
+  justify-content: space-between;
+}
+
+.cardholder__input {
+  /* width: 22.5rem; */
+  width: 170%;
+}
+
+.row__exp__lower {
+  background-color:rgb(8, 15, 77)
+  font-size: 2rem;
+  display: flex;
+  /* margin-left: 2rem; */
+  justify-content: space-between;
+
+  /* width: 100%; */
+}
+
 .exp {
-  width: 30px;
+  width: 3.5rem;
+  /* width: 3rem; */
+}
+
+
+.exp__row {
+  /* width: 100rem; */
+}
+
+.exp__input {
+  padding: 15px;
+  /* width: 20rem; */
+  /* height: ; */
+  /* justify-self: center; */
+}
+
+.exp__input-1 {
+  /* width: 50rem; */
+}
+
+.cardnumber__input {
+  width: 20rem;
+}
+
+.ccv__input {
+  width:  10rem;
 }
 
 button {

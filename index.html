@@ -20,22 +20,41 @@
             <div class="row row-1">
               <div class="row-left">
                 <h2>Cardholder Name</h2>
-                <input type="text" placeholder="Cardholder Name" />
+                <input
+                  type="text"
+                  placeholder="Cardholder Name"
+                  class="cardholder__input"
+                />
               </div>
-              <div class="row-right">
+              <div class="row-right row__exp">
                 <h2>Expiration</h2>
-                <input type="text" class="exp" placeholder="MM" /> /
-                <input type="text" class="exp" placeholder="YY" />
+                <div class="row__exp__lower">
+                  <input
+                    type="text"
+                    placeholder="MM"
+                    class="exp exp__input exp__input-1"
+                  />
+                  <h3>/</h3>
+                  <input
+                    type="text"
+                    placeholder="YY"
+                    class="exp exp__input exp__input-2"
+                  />
+                </div>
               </div>
             </div>
             <div class="row row-2">
               <div class="row-left">
                 <h2>Card Number</h2>
-                <input type="text" placeholder="Card Number" />
+                <input
+                  type="text"
+                  placeholder="Card Number"
+                  class="cardnumber__input"
+                />
               </div>
               <div class="row-right">
                 <h2>CCV</h2>
-                <input type="text" placeholder="CCV" />
+                <input type="text" placeholder="CCV" class="ccv__input" />
               </div>
             </div>
           </div>
