@@ -4,26 +4,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: poppins; */
+  /* background-color: black; */
+}
+
+body {
+  font-family: poppins;
+  background-color: black;
 }
 
 .checkout__container {
-  /* width: 50rem;
-  height: 50rem; */
+  /* margin: auto;
+  padding: auto;
+  justify-self: center;
+  width: 55rem;
+  height: 60rem;
+  margin-top: 2rem; */
   /* display: flex; */
+  
   /* background-color: blue; */
-  /* margin-top: 10px; */
 }
 
 .checkout__container__inner {
   font-size: 1.2rem;
   margin: auto;
   padding: auto;
-  background-color: rgb(77, 24, 24);
+  background-color: rgb(255, 250, 250);
   display: flexbox;
   width: 50rem;
-  height: 60rem;
+  /* height: 60rem; */
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  border-top: 15px solid rgb(77, 24, 24);
 }
 
 .header {
@@ -31,7 +43,7 @@
   justify-content: space-between;
   text-align: end;
   vertical-align: bottom;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 2.5px solid #aaa;
 }
 
 h2{
@@ -39,7 +51,7 @@ h2{
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 .header__lower {
   margin: 2rem 0;
@@ -57,7 +69,6 @@ h3 {
 }
 
 .row {
-  background-color: rebeccapurple;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
@@ -70,6 +81,11 @@ input {
   height: 2.5rem;
   border-radius: 10px;
   padding: 10px;
+  border: solid 1px rgb(180, 180, 180);
+}
+
+input:hover {
+  cursor: pointer;
 }
 
 .row-1 {
@@ -78,7 +94,7 @@ input {
 
 .cardholder__input {
   /* width: 22.5rem; */
-  width: 170%;
+  width: 135%;
 }
 
 .row__exp__lower {
@@ -126,5 +142,15 @@ button {
   position: absolute;
   left: 60%;
   margin-top: 1rem;
+  font-size: 1rem;
+
   /* justify-self: end; */
+  background-color: black;
+  border: 4px solid rgb(77, 24, 24);
+  color:  rgb(77, 24, 24);
+  
+}
+
+button:hover {
+  cursor: pointer;
 }
