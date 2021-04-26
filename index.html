@@ -6,101 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
-    <main>
-      <div class="checkout__container">
-        <div class="checkout__container__inner">
-          <div class="header header__upper">
-            <h2>Checkout</h2>
-            <h2>Credit Card Details</h2>
-          </div>
-          <div class="container container__upper">
-            <div class="row row-1">
-              <div class="row-left">
-                <h2>Cardholder Name</h2>
-                <input
-                  type="text"
-                  placeholder="Cardholder Name"
-                  class="cardholder__input"
-                />
-              </div>
-              <div class="row-right row__exp">
-                <h2>Expiration</h2>
-                <div class="row__exp__lower">
-                  <input
-                    type="text"
-                    placeholder="MM"
-                    class="exp exp__input exp__input-1"
-                  />
-                  <h3>/</h3>
-                  <input
-                    type="text"
-                    placeholder="YY"
-                    class="exp exp__input exp__input-2"
-                  />
-                </div>
-              </div>
+    <div class="container">
+      <header class="header__top">
+        <h2>Checkout</h2>
+        <h2>Credit Card Details</h2>
+      </header>
+      <form class="form" id="form">
+        <div class="form__inner">
+          <div class="row">
+            <div class="row-left form-control">
+              <h2>Cardholder Name</h2>
+              <input
+                type="text"
+                placeholder="Cardholder Name"
+                class="cardholder__input"
+              />
             </div>
-            <div class="row row-2">
-              <div class="row-left">
-                <h2>Card Number</h2>
+            <div class="row-right row__exp">
+              <h2>Expiration</h2>
+              <div class="row__exp__lower form-control">
                 <input
                   type="text"
-                  placeholder="Card Number"
-                  class="cardnumber__input"
+                  placeholder="MM"
+                  class="exp exp__input exp__input-1"
                 />
-              </div>
-              <div class="row-right">
-                <h2>CCV</h2>
+                <h3>/</h3>
                 <input
                   type="text"
-                  placeholder="CCV"
-                  class="ccv__input"
-                  required
+                  placeholder="YY"
+                  class="exp exp__input exp__input-2"
                 />
               </div>
             </div>
           </div>
-          <div class="container container__lower">
-            <div class="header header__lower">
-              <h2>Billing Info</h2>
+          <div class="row">
+            <div class="row-left form-control">
+              <h2>Card Number</h2>
+              <input
+                type="text"
+                placeholder="Card Number"
+                class="cardnumber__input"
+              />
             </div>
-            <div class="row row-3">
-              <div class="row-left">
-                <h2>First Name</h2>
-                <input type="text" placeholder="First" />
-              </div>
-              <div class="row-right">
-                <h2>Last Name</h2>
-                <input type="text" placeholder="Last" />
-              </div>
-            </div>
-            <div class="row row-4">
-              <div class="row-left">
-                <h2>Address</h2>
-                <input type="text" placeholder="Address" />
-              </div>
-              <div class="row-right">
-                <h2>State</h2>
-                <input type="text" placeholder="State" />
-              </div>
-            </div>
-            <div class="row row-5">
-              <div class="row-left">
-                <h2>City</h2>
-                <input type="text" placeholder="City" />
-              </div>
-              <div class="row-right">
-                <h2>Zip Code</h2>
-                <input type="text" placeholder="Zip" />
-              </div>
+            <div class="row-right form-control">
+              <h2>CCV</h2>
+              <input type="ccv" placeholder="CCV" id="ccv" class="ccv__input" />
+              <i class="fas fa-check-circle"> </i>
+              <i class="fas fa-exclamation-circle"> </i>
             </div>
           </div>
         </div>
-        <button type="button">SUBMIT</button>
-      </div>
-    </main>
+        <div class="form__inner">
+          <header class="header__lower">
+            <h2>Billing Info</h2>
+          </header>
+          <div class="row">
+            <div class="row-left form-control">
+              <h2>First Name</h2>
+              <input type="text" placeholder="First" />
+            </div>
+            <div class="row-right form-control">
+              <h2>Last Name</h2>
+              <input type="text" placeholder="Last" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-left form-control">
+              <h2>Address</h2>
+              <input type="text" placeholder="Address" />
+            </div>
+            <div class="row-right form-control">
+              <h2>State</h2>
+              <input type="text" placeholder="State" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-left form-control">
+              <h2>City</h2>
+              <input type="text" placeholder="City" />
+            </div>
+            <div class="row-right form-control">
+              <h2>Zip Code</h2>
+              <input type="text" placeholder="Zip" />
+            </div>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
   </body>
 </html>
